@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductFilterOptions from "../components/ProductFilterOptions";
 import ProductListing from "../components/ProductListing";
 
 const ProductList = () => {
+  const [activeOption, setActiveOption] = useState("All products");
+
+  const handleChangeOption = (option) => {
+    setActiveOption(option);
+  };
+
   return (
     <main>
       <div className="container">
@@ -28,10 +34,13 @@ const ProductList = () => {
               </span>
             </h1>
 
-            <ProductFilterOptions />
+            <ProductFilterOptions
+              activeOption={activeOption}
+              onChangeOption={handleChangeOption}
+            />
           </div>
 
-          <ProductListing />
+          <ProductListing activeOption={activeOption} />
         </div>
       </div>
     </main>

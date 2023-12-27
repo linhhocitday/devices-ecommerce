@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
-const ProductFilterOptions = () => {
-  const [activeOption, setActiveOption] = useState("All products");
-
+const ProductFilterOptions = ({ activeOption, onChangeOption }) => {
   const options = ["All products", "Phone", "Laptop", "Tablet", "Others"];
 
+  const optionsRendering = options.map((option) =>
+    activeOption == option ? (
+      <li key={option} active="true">
+        {option}
+      </li>
+    ) : (
+      <li key={option} active="false" onClick={() => onChangeOption(option)}>
+        {option}
+      </li>
+    )
+  );
+
   return (
-    <ul className="product-options-list flex-block">
-      {options.map((option) => (
-        <li>{option}</li>
-      ))}
-    </ul>
+    <ul className="product-options-list flex-block">{optionsRendering}</ul>
   );
 };
 

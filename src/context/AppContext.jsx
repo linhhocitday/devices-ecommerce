@@ -13,6 +13,12 @@ const products = [
     preOrder: "true",
     colors: ["#BAB4A9", "#4D5463", "#F3F2EC", "#4D4E4F"],
     price: 999,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 2,
@@ -22,6 +28,12 @@ const products = [
     preOrder: "true",
     colors: ["#D5DDE0", "#ECD3D5", "#EDE8CB", "#D3DCCD", "#4B4F50"],
     price: 1199,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 3,
@@ -31,6 +43,12 @@ const products = [
     preOrder: "false",
     colors: ["#A7BACB", "#E6DDEB", "#FFF495", "#30363D", "#FAF6F3", "#FC1735"],
     price: 799,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 4,
@@ -40,6 +58,12 @@ const products = [
     preOrder: "false",
     colors: ["#A7BACB", "#E6DDEB", "#FFF495", "#30363D", "#FAF6F3", "#FC1735"],
     price: 699,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 5,
@@ -49,6 +73,12 @@ const products = [
     preOrder: "false",
     colors: ["#437692", "#FBE1DD", "#41484E", "#FBF7F4", "#475946", "#C72333"],
     price: 599,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 6,
@@ -58,6 +88,12 @@ const products = [
     preOrder: "false",
     colors: ["#7D7E80", "#2E3642", "#F0E4D3", "#E3E4E6"],
     price: 1099,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 7,
@@ -67,6 +103,12 @@ const products = [
     preOrder: "false",
     colors: ["#7D7E80", "#2E3642", "#F0E4D3", "#E3E4E6"],
     price: 1299,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 8,
@@ -76,6 +118,12 @@ const products = [
     preOrder: "false",
     colors: ["#AAADB0", "#DDDFDE"],
     price: 1299,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 9,
@@ -85,6 +133,12 @@ const products = [
     preOrder: "false",
     colors: ["#868789", "#E5E6E7"],
     price: 1999,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 10,
@@ -94,6 +148,12 @@ const products = [
     preOrder: "false",
     colors: ["#868789", "#E5E6E7"],
     price: 2499,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 11,
@@ -103,6 +163,12 @@ const products = [
     preOrder: "false",
     colors: ["#B1B4B7", "#DFE1E0"],
     price: 799,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 12,
@@ -112,6 +178,12 @@ const products = [
     preOrder: "false",
     colors: ["#747277", "#91B4C4", "#E8D2CF", "#BEBDD4", "#E6E2DA"],
     price: 599,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 13,
@@ -121,6 +193,12 @@ const products = [
     preOrder: "false",
     colors: ["#6880A3", "#DE6373", "#F0D95B", "#E3E4E5"],
     price: 449,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 14,
@@ -130,6 +208,12 @@ const products = [
     preOrder: "false",
     colors: ["#E8D2CF", "#4D5463", "#E6E2DA", "#4D4E4F"],
     price: 399,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
   {
     id: 15,
@@ -139,6 +223,12 @@ const products = [
     preOrder: "false",
     colors: [],
     price: 799,
+    storages: {
+      "128GB": 999,
+      "256GB": 1099,
+      "512GB": 1299,
+      "1TB": 1499,
+    },
   },
 ];
 

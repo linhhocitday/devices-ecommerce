@@ -2,14 +2,26 @@ import React from "react";
 import { useAppContext } from "../hooks/useAppContext";
 import { Link } from "react-router-dom";
 
-const ProductListing = () => {
+const ProductListing = ({ activeOption }) => {
   const { products } = useAppContext();
+
+  const filteredProducts =
+    activeOption === "All products"
+      ? products
+      : activeOption === "Phone"
+      ? products.filter((product) => product.type == "phone")
+      : activeOption === "Laptop"
+      ? products.filter((product) => product.type == "laptop")
+      : activeOption === "Tablet"
+      ? products.filter((product) => product.type == "tablet")
+      : products.filter((product) => product.type == "watch");
+  // TODO: fix get only watch to filter != phone, laptop, tablet
 
   return (
     <ul className="product-list grid-block">
-      {products.map((product) => (
+      {filteredProducts.map((product) => (
         <li key={product.id}>
-          <Link to={`/products/${product.id}`} className="flex-block">
+          <Link to={`${product.id}`} className="flex-block">
             <div className="text-align-center content-wrapper">
               <div
                 className="image-block"
