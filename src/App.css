@@ -417,6 +417,8 @@ main {
 .product-detail {
   background-color: #fff;
   border-radius: 16px;
+  position: sticky;
+  top: 80px;
 }
 
 .right-side {
